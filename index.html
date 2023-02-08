@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"
+      integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Personal Portfolio</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container navbar">
+        <nav>
+          <img
+            src="./images/sixtus-logo.png"
+            class="logo"
+            alt="image of a Logo"
+          />
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <span class="fas fa-angle-up" id="scroll-top"></span>
+      </div>
+
+      <div class="container profile-container">
+        <div class="header-text">
+          <p class="topic">Fullstack web Developer</p>
+          <h1>
+            Hi, I'm
+            <span>Sixtus</span>
+            <br />
+            Aondoakaa from
+            <br />
+            Nigeria.
+          </h1>
+        </div>
+
+        <div class="profile-image-wrapper">
+          <img
+            src="./images/profile-img.png"
+            class="profile-img"
+            alt="An image of a profile"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="./images/profile-img-2.png"
+              class="position-top"
+              alt="An image of user"
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I Develop and Create Web Applications that runs on all kinds of
+              devices. I also have great passion about design so, I basically
+              design websites as well as Brands/Logos for small and large scale
+              Enterprises.
+            </p>
+            <p>
+              I started my Career in Programming some couple of years ago, and
+              starting this journey was such a great excitement and achievement
+              to me because, It's something I always wanted to do. Though, the
+              beginning was pretty challenging but I held my ground with
+              perseverance and consistency, beeing a self taught made it more
+              challenging but at thesame time helped me build self decipline
+              which kept me growing stronger as a Programmer till date.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Fullstack Developer</span>
+                  <br />
+                  I develop and build fullstack web
+                  <br />
+                  application that runs on all kinds of devices.
+                </li>
+                <li>
+                  <span>Web Designer</span>
+                  <br />
+                  I design the layout and visual aspect
+                  <br />
+                  of a website and web app.
+                </li>
+                <li>
+                  <span>Brand / Logo Designer</span>
+                  <br />
+                  I'm very passionate about design since from
+                  <br />
+                  day one and always wanted to be that
+                  <br />
+                  person that makes the best design.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022 - date</span>
+                  <br />
+                  Freelancer as a Fullstack Web developer
+                </li>
+                <li>
+                  <span>2020 - 2021</span>
+                  <br />
+                  Freelancer as a Web Designer developer
+                </li>
+                <li>
+                  <span>2019 - 2020</span>
+                  <br />
+                  Freelancer as a Brand / Logo Designer
+                </li>
+
+                <li>
+                  <span>2019 - 2020</span>
+                  <br />
+                  Freelancer as a Graphics Designer
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2023 - date</span>
+                  <br />
+                  Undergraduate(BSU)
+                </li>
+                <li>
+                  <span>Certified</span>
+                  <br />
+                  Diploma in Software Project Management
+                </li>
+                <li>
+                  <span>Graduated</span>
+                </li>
+                <li>
+                  <span>Graduated</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services  Section -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2 class="service-header">Web Design</h2>
+            <p>
+              I've been always passionate about design and creativity and always
+              want to design something that would amazed people and make create
+              flexibility.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fas fa-crop"></i>
+            <h2 class="service-header">Web Development</h2>
+            <p>
+              Development is a great field to be, I love building great
+              websites, web apps that a user can interact with.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h2 class="service-header">Brand / Logo Design</h2>
+            <p>
+              It is well know by every business that Brands are extremely
+              important for easy identification and uniqueness.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./images/work-1.png" alt="An image of work 1" />
+            <div class="layer">
+              <h3>Ecommerce website</h3>
+              <p>
+                Check this amazing Ecommerce website in the browser
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="./images/work-2.png" alt="An image of work 2" />
+            <div class="layer">
+              <h3>Landing page</h3>
+              <p>
+                Check this amazing Landing page website in the browser
+              </p>
+              <a
+                href="https://sixtusdeveloper.github.io/Shopping-website/"
+                target="_blank"
+              >
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="./images/work-3.png" alt="An image of work 3" />
+            <div class="layer">
+              <h3>Cloud Application</h3>
+              <p>
+                Check this amazing cloud website in the browser
+              </p>
+              <a href="https://sixtusdeveloper.github.io/cloudicity/" target="_blank">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a
+          href="https://github.com/Sixtus-Developer"
+          target="_blank"
+          class="btn"
+        >
+          See More
+        </a>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fas fa-paper-plane"></i>
+              sixtusushrey@gmail.com
+            </p>
+            <p>
+              <i class="fas fa-phone"></i>
+              +234 902 204 8105
+            </p>
+            <div class="social-icons">
+              <a href="https://web.facebook.com/sixtusushrey/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://twitter.com/SixtusUshahemba/" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/sixtusushrey/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sixtusushrey/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/Sixtus-Developer" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+            <a href="./images/my-cv.pdf" download class="btn btn2">
+              Download Resume
+            </a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <div class="success-msg" id="success-msg">
+                <span class="msg" id="msg"></span>
+              </div>
+
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                cols=""
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">
+        copyright&copy; 2023 | Created by
+        <span style="color: #ff004f;">Sixtusdev</span>
+        | All Rights Reserved | Terms & Coditions
+      </p>
+    </div>
+
+    <script>
+      var tabLinks = document.getElementsByClassName('tab-links')
+      var tabContents = document.getElementsByClassName('tab-contents')
+
+      function opentab(tabname) {
+        for (tablink of tabLinks) {
+          tablink.classList.remove('active-link')
+        }
+
+        for (tabContent of tabContents) {
+          tabContent.classList.remove('active-tab')
+        }
+
+        event.currentTarget.classList.add('active-link')
+        document.getElementById(tabname).classList.add('active-tab')
+      }
+    </script>
+
+    <script>
+      var sideMenu = document.getElementById('sideMenu')
+      // OpenMenu
+      function openmenu() {
+        sideMenu.style.right = '0px'
+      }
+
+      // CloseMenu
+      function closemenu() {
+        sideMenu.style.right = '-200px'
+      }
+    </script>
+
+    <!-- Form Submit -->
+    <script>
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbz4kH_wri_5sDdPc6HqDD-gH44rtvr5i4IF4fYy_BBq6xla_yiNq1ot2p_7iiOp3q3eWA/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById('msg')
+      const msgBlock = document.querySelector('#success-msg')
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = 'Message Sent Successfully!'
+            msgBlock.style.display = 'block'
+            setTimeout(() => {
+              msg.innerHTML = ''
+              msgBlock.style.display = 'none'
+            }, 4000)
+            form.reset()
+          })
+          .catch((error) => console.error('Error!', error.message))
+      })
+    </script>
+
+    <script type="text/javascript">
+      /*===== Resize Navbar on Scroll =====*/
+      var navbar = document.querySelector('.container.navbar')
+      var scrollTop = document.querySelector('#scroll-top')
+      //when the scroll is higher than 20 viewport height, add the sticky class to the tag with a class navbar
+      window.onscroll = () => {
+        if (window.scrollY > 20) {
+          navbar.classList.add('sticky_navbar')
+          scrollTop.classList.add('is_active')
+        } else {
+          navbar.classList.remove('sticky_navbar')
+          scrollTop.classList.remove('is_active')
+        }
+      }
+    </script>
+    <script src="./js/jQuery v3.6.3.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
