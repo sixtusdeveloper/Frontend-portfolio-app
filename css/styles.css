@@ -122,6 +122,17 @@ nav ul li a::after {
   transition: 0.5s;
 }
 
+.active_links::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
 nav ul li a:hover::after {
   width: 100%;
   cursor: pointer;
