@@ -12,7 +12,7 @@ $(document).ready(function () {
 
 // Auto indicate active section from the section link script
 const sections = document.querySelectorAll('section')
-const navLinks = document.querySelectorAll('.menu .nav-item a')
+const navLinks = document.querySelectorAll('#header nav ul li a')
 
 const options = {
   rootMargin: '-50% 0% -50% 0%',
